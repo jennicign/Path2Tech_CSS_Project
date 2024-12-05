@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Project</title>
+</head>
+<body>
+  <main>
+    <!-- Header and Navigation Section -->
+    <nav id="navigation-section" role="navigation" class="navigation-sidebar">
+      <header id="name-header">
+        <div class="header-content">
+          <img src="user_profile_pic.jpg" alt="User profile picture" id="profile-picture" />
+          <h1> Welcome, Jenn!</h1>
+      </div>
+      </header>
+      <button id="compose-button" aria-label="Compose a new email">Compose</button>
+      <ul>
+        <li class="side-bar-content"> Inbox (127)</li>
+        <li class="side-bar-content"> Tagged</li>
+        <li class="side-bar-content"> Important</li>
+        <li class="side-bar-content"> Sent Mail</li>
+        <li class="side-bar-content"> Drafts</li>
+        <li class="side-bar-content"> Trash</li>
+      </ul>
+    </nav>
+      <!-- Email Search and List Section -->
+      <section class="email-list-section">
+        <form id="email-search" class="email-search-bar">
+          <label for="email-search-bar" class="visually-hidden">Search for Emails</label>
+          <input type="text" placeholder="Search For Emails" id="email-search-bar" />
+        </form>
+        <div class="email-list">
+          <div class="email-item">
+            <div class="email-sender">
+              <strong>LinkedIn</strong>
+              <span class="email-time">2:45 PM</span>
+            </div>
+            <div class="email-preview">
+              You have a new connection request!
+            </div>
+          </div>
+          <div class="email-item">
+            <div class="email-sender">
+              <strong>Michael Scott Daily Quotes</strong>
+              <span class="email-time">Jul 3, 2020</span>
+            </div>
+            <div class="email-preview">
+              I'm optimistic because everyday I get a...
+            </div>
+          </div>
+          <div class="email-item">
+            <div class="email-sender">
+              <strong>Lemar Software</strong>
+              <span class="email-time">Feb 9, 2020</span>
+            </div>
+            <div class="email-preview">
+              Learn how you can give us money by...
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Email Content Section -->
+      <section class="email-content-section">
+        <div class="email-content">
+          <div class="email-header">
+            <p><strong>To:</strong> taylor@lamarsoftware.io</p>
+            <p><strong>From:</strong> re-reply@theofficenbc.com</p>
+          </div>
+          <hr class="email-divider">
+          <div class="email-title">
+            <h2>Michael Scott Daily Quotes</h2>
+          </div>
+          <br>
+          <div class="email-body">
+            <p>Friends joke with one another. "Hey, your momma's dead." That's what friends do.</p>
+            <br>
+            <p>"It's a good thing Russia doesn't exist anymore."</p>
+            <br>
+            <p>"You cheated on me? When I specifically asked you not to?"</p>
+            <br>
+            <p>"It just seems awfully mean. But sometimes, the ends justify the mean."</p>
+            <br>
+            <p>"Reverse psychology is an awesome tool. I don't know if you guys know about it, but basically, you make someone think the opposite of what you believe, and that tricks them into doing something stupid. Works like a charm!"</p>
+          </div>
+        </div>
+        <textarea class="email-content-input" placeholder="Enter Message..."></textarea>
+        <button class="email-send-button">Send Email</button>
+      </section>
+  </main>
+</body>
+</html>
